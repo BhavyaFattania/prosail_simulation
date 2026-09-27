@@ -1,0 +1,23 @@
+[project]
+name = "remote-sensing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "BhavyaFattania", email = "bhavyafattania05@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "prosail>=2.0.5",
+    "openpyxl>=3.1",
+]
+
+[project.scripts]
+remote-sensing = "remote_sensing.generate_lut:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
